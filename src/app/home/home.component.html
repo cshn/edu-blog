@@ -1,0 +1,65 @@
+<header class="header clearfix">
+    <nav class="navbar navbar-expand bg-dark navbar-dark">
+        <a class="navbar-brand" routerLink="/home">EnrichmentGoWhere</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <button #addPost (click)="openDialog()" class="btn btn-secondary">Add</button>
+                  </li>
+            </ul>
+            <ul class="nav navbar-nav text-right">
+                <li class="nav-item">
+                    <button (click)="logout()" type="button" class="btn btn-secondary"> Logout </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main role="main">
+    <app-show-post></app-show-post>
+</main>
+
+<footer class="page-footer font-small blue pt-4">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-3 mb-md-0 mb-3">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/home">Privacy statement</a>
+                    </li>
+                </ul>
+                
+            </div>
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/home">Contact</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/home">Feedback</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+        </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        <a href="https://enrichmentgowhere.com/"> enrichmentgowhere.com</a>
+    </div>
+</footer>
